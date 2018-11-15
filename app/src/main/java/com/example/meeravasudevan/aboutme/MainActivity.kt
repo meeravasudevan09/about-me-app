@@ -28,7 +28,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun displayNickname(view: View) {
         binding.apply {
-            nicknameText.text = nicknameEdit.text
+            allNames?.nickname = nickname_edit.text.toString()
+            // Invalidate all binding expressions and request a new rebind to refresh UI
+            invalidateAll()
 
             nickname_text.visibility = View.VISIBLE
             nickname_edit.visibility = View.GONE

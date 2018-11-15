@@ -15,16 +15,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main)
 
         val doneButton: Button = findViewById(R.id.done_button)
-        editNickname = findViewById(R.id.nickname_edit)
-        nickname = findViewById(R.id.nickname_text)
-
         doneButton.setOnClickListener {
             displayNickname(it)
         }
+
+        editNickname = findViewById(R.id.nickname_edit)
+        nickname = findViewById(R.id.nickname_text)
     }
 
     private fun displayNickname(view: View) {

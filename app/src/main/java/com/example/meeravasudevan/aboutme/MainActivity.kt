@@ -13,10 +13,14 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    //    Instatiate data class
+    private val name: AllNames = AllNames("Doctor Who")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        binding.allNames = name
         binding.doneButton.setOnClickListener {
             displayNickname(it)
         }

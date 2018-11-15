@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">About Me</string>
     <string name="name">Doctor Who</string>
+    <string name="yellow_star">Yellow Star</string>
+
+    <string name="bio">
+        The Thirteenth Doctor is the current incarnation of the Doctor, the fictional protagonist of the
+        BBC science fiction television programme Doctor Who. She is portrayed by English actress Jodie Whittaker,
+        the first woman to portray the character in the series.
+        \n\n
+        In the show\'s narrative, the Doctor is a time travelling,
+        humanoid alien from a race known as "the Time Lords". To account for actors\' departure from the series, the
+        programme introduced the narrative concept of regeneration, a means for a Time Lord to gain a new appearance and
+        a distinct new personality when the Doctor approaches the end of the current incarnation.
+        \n\n
+        Whittaker appeared for the first time as the Thirteenth Doctor at the end of the 2017 Christmas special, "Twice Upon a Time",
+        and stars as the Doctor from 2018, starting with the programme\'s eleventh series.
+    </string>
 </resources>

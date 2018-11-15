@@ -11,6 +11,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    // Binding object for MainActivity.
+    // Name of the object is derived from the name of the activity or fragment.
     private lateinit var binding: ActivityMainBinding
 
     //    Instatiate data class
@@ -18,14 +20,27 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Setting the content view using DataBindingUtil creates an instance of
+        // ActivityMainBinding from the supplied activity and the supplied layout. This object
+        // contains mappings between the activity and layout,
+        // and functionality to interact with them.
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        // Set the value of the allNames variable that is declared and used in the layout file.
         binding.allNames = name
+
+        // Click listener for the Done button
         binding.doneButton.setOnClickListener {
             displayNickname(it)
         }
     }
 
+    /**
+     * Click handler for the Done button.
+     * Demonstrates how data binding can be used to make code much more readable
+     * by eliminating calls to findViewById and changing data in the binding object.
+     */
     private fun displayNickname(view: View) {
         binding.apply {
             allNames?.nickname = nickname_edit.text.toString()

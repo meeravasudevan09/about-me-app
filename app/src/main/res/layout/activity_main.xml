@@ -12,7 +12,18 @@
         android:layout_height="wrap_content"
         android:text="@string/name"
         android:textAlignment="center"
-        android:textSize="@dimen/text_size" />
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_name_text"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enquire_nickname"
+        android:inputType="textImeMultiLine|textPersonName"
+        android:textAlignment="center" />
 
     <ImageView
         android:id="@+id/yellow_star_image"
